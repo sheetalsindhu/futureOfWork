@@ -1,0 +1,21 @@
+.bottom_nav {
+  background-color: pink;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab {
+  display: flex;
+  width: 40px;
+  background-color: pink;
+  /* flex-direction: ; */
+}
+
+.tab:hover {
+  display: flex;
+  width: 40px;
+  background-color: pink;
+  color: #e5265a;
+  /* flex-direction: ; */
+}
