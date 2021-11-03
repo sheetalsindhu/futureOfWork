@@ -1,0 +1,27 @@
+.upper_div {
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  background: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+.icon {
+  color: #e5265a;
+  font-size: 32px;
+}
+
+.image_div > img {
+  position: absolute;
+  left: 4.19%;
+  right: 4.19%;
+  top: 29.47%;
+  bottom: 9.82%;
+  border-radius: 16px;
+  width: 20%;
+}
