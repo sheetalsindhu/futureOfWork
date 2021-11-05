@@ -1,6 +1,7 @@
 import "./App.css";
 import Card from "./components/Card/Card";
 import BottomNav from "./components/bottom-nav/BottomNav";
+import Menu from "./components/menu/Menu";
 
 const workCard = {
   title: "WORK",
@@ -13,7 +14,8 @@ const workCard = {
 function App() {
   return (
     <div className="App">
-      <BottomNav />
+      <Menu />
+      {/* <BottomNav /> */}
     </div>
   );
 }
