@@ -1,12 +1,53 @@
 .menu_cont {
   display: flex;
-  background-color: black;
-  height: 100vh;
-  width: 100vw;
+  flex-direction: column;
+  padding: 10px;
 }
 
 .upper_div {
   display: flex;
-  background-color: rgb(105, 105, 105);
-  border-bottom: 1px solid black;
+  flex-direction: row;
+  font-size: 16px;
+  align-items: center;
+  gap: 20px;
+  height: 80px;
+}
+
+.lower_div {
+  color: #868686;
+  font-size: 12px;
+}
+
+.upper_div p {
+  color: #868686;
+  font-size: 12px;
+}
+
+.upper_div h1 {
+  font-size: 20px;
+  color: #e5265a;
+}
+
+.worklyf_div h1,
+.account_div h1,
+.aboutUs_div h1,
+.help h1 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 10px;
+}
+
+.links p {
+  font-size: 12px;
+}
+.links {
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 10px;
+  color: #868686;
 }

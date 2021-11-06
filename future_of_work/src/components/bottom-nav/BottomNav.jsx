@@ -6,8 +6,8 @@ import { MdOutlineReviews } from "react-icons/md";
 function BottomNav() {
   return (
     <>
-      <div classname={styles.bottom_nav}>
-        <div classname={styles.tab}>
+      <div className={styles.bottom_nav}>
+        <div className={styles.tab}>
           <div>
             <FiSearch />
           </div>
@@ -16,7 +16,7 @@ function BottomNav() {
           </div>
         </div>
 
-        <div classname={styles.tab}>
+        <div className={styles.tab}>
           <div>
             <FiBriefcase />
           </div>
@@ -25,7 +25,7 @@ function BottomNav() {
           </div>
         </div>
 
-        <div classname={styles.tab}>
+        <div className={styles.tab}>
           <div>
             <MdOutlineReviews />
           </div>
@@ -34,7 +34,7 @@ function BottomNav() {
           </div>
         </div>
 
-        <div classname={styles.tab}>
+        <div className={styles.tab}>
           <div>
             <FiBookOpen />
           </div>
@@ -43,7 +43,7 @@ function BottomNav() {
           </div>
         </div>
 
-        <div classname={styles.tab}>
+        <div className={styles.tab}>
           <div>
             <FiGlobe />
           </div>

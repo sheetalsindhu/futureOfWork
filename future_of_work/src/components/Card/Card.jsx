@@ -1,25 +1,27 @@
 import styles from "./Card.module.css";
-import { BsArrowRightCircle } from "react-icons/bs";
+import UpperNav from "../upper_nav/UpperNav";
+import BottomNav from "../bottom-nav/BottomNav";
 
-function Card({ data }) {
-  console.log(data);
+const Card = ({ data }) => {
   return (
-    <div className={styles.card}>
-      <div className={styles.upper_div}>
-        <div>
-          <h1 style={{ color: data.color }}>{data.title}</h1>
-          <p>{data.subtitle}</p>
-        </div>
-        <div className={styles.icon}>
-          <BsArrowRightCircle />
+    <>
+      {/* <h1>Select You Daily Pass</h1> */}
+      <div className={styles.card_cont}>
+        <div className={styles.card}>
+          <div className={styles.details}>
+            <h1 className={styles.title}>{data.title}</h1>
+            <ul>
+              {data.features.map((el) => (
+                <li> - {el}</li>
+              ))}
+            </ul>
+          </div>
+          <div className={styles.duration}>
+            <p>{data.duration}</p>
+          </div>
         </div>
       </div>
-
-      <div className={styles.image_div}>
-        <img src={data.image} alt="" />
-      </div>
-    </div>
+    </>
   );
-}
-
+};
 export default Card;
