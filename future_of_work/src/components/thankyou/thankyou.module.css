@@ -13,7 +13,9 @@
 }
 
 .thanku_div {
+  padding: 20px;
   height: 100vh;
+  background-color: whitesmoke;
 }
 
 .message {

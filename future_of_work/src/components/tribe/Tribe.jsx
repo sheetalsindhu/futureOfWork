@@ -1,6 +1,7 @@
 import UpperNav from "../upper_nav/UpperNav";
 import BottomNav from "../bottom-nav/BottomNav";
 import styles from "./tribe.module.css";
+import { Link } from "react-router-dom";
 
 function Tribe() {
   return (
@@ -15,7 +16,7 @@ function Tribe() {
           </div>
 
           <div className={styles.tribe}>
-            <img src="./solo.png" alt="team" />
+            <img src="./team.png" alt="team" />
             <p>With a team</p>
           </div>
         </div>
