@@ -5,11 +5,17 @@
   align-items: center;
   margin-bottom: 20px;
   padding: 10px;
-  /* margin: auto; */
   background: #ffffff;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 16px 0px 0px 16px;
   border-right: 8px solid #e5265a;
+  cursor: pointer;
+}
+
+.main {
+  padding-top: 80px;
+  background-color: whitesmoke;
+  height: 100vh;
 }
 
 .details {
@@ -37,6 +43,19 @@
   font-weight: 600;
   color: #e5265a;
 }
-.card_cont {
+
+.card {
   padding: 0px 10px;
+}
+
+.btn {
+  background: #e5265a;
+  border-radius: 8px;
+  height: 48px;
+  width: 124px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  margin: 20px;
+  cursor: pointer;
 }

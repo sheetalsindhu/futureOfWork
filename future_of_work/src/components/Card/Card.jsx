@@ -1,32 +1,48 @@
 import styles from "./Card.module.css";
-import { useParams } from "react-router-dom";
 import UpperNav from "../upper_nav/UpperNav";
 import BottomNav from "../bottom-nav/BottomNav";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
-
+// import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { useState } from "react";
+import Workpass from "../workpass/Workpass";
 
 const Card = ({ data }) => {
-  const obj = useParams(); 
+  const [cardData, setCardData] = useState({});
+
+  const handleClick = (e) => {
+    setCardData(e);
+  };
+
+  
 
   return (
     <>
-      {/* <map name=""></map> */}
-      {/* <h4> {obj.id}</h4> */}
+      <UpperNav />
+      <BottomNav />
+      <div className={styles.main}>
+        <h1>Select Your Pass</h1>
 
-      <div className={styles.card_cont}>
-        <div className={styles.card}>
-          <div className={styles.details}>
-            <h1 className={styles.title}>{data.title}</h1>
-            <ul>
-              {data.features.map((el) => (
-                <li> - {el}</li>
-              ))}
-            </ul>
+        {data.map((data) => (
+          <div
+            onClick={() => {
+              handleClick(data);
+            }}
+            className={styles.card}
+          >
+            <div className={styles.details}>
+              <h1 className={styles.title}>{data.title}</h1>
+              <ul>
+                {data.features.map((el) => (
+                  <li> - {el}</li>
+                ))}
+              </ul>
+            </div>
+            <div className={styles.duration}>
+              <p>{data.duration}</p>
+            </div>
           </div>
-          <div className={styles.duration}>
-            <p>{data.duration}</p>
-          </div>
-        </div>
+        ))}
+
+        <Workpass data={cardData} />
       </div>
     </>
   );
