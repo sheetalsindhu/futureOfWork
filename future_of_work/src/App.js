@@ -9,6 +9,8 @@ import Card from "./components/Card/Card";
 import Workpass from "./components/workpass/Workpass";
 import Worklyf from "./components/worklyf/Worklyf";
 import Slider from "./components/Slider/Slider";
+import Team from "./components/team/Team";
+import BottomNav from "./components/bottom-nav/BottomNav";
 
 import Data from "./data.json";
 
@@ -17,19 +19,23 @@ function App() {
 
   return (
     <div className="App">
-      <Slider />
+      {/* <Slider />
       <br></br>
       <Worklyf />
       <br></br>
       <Menu />
       <br></br>
       <Tribe />
-      <br></br>
+      <br></br> */}
 
       {/* <Card />
       <br></br> */}
-
+      {/* 
       <Thankyou />
+      <br></br>
+      <Team /> */}
+
+      <BottomNav />
       <br></br>
       <div className="data">
         {workPass.map(

@@ -47,22 +47,35 @@
   font-size: 14px;
 }
 
+.faci {
+  overflow-x: scroll;
+  display: flex;
+  gap: 20px;
+}
+
 .faci p {
-  list-style: none;
+  flex-shrink: 0;
+  text-align: center;
+  align-items: center;
+  border-radius: 16px;
   height: 100px;
   width: 100px;
   background: #ffffff;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 16px;
-  overflow-x: scroll;
   text-align: center;
 }
 
-.faci {
-  display: flex;
+.faci img {
   flex-shrink: 0;
-  gap: 20px;
+  text-align: center;
   align-items: center;
+  border-radius: 16px;
+  width: 30%;
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 .facilities {
   margin-bottom: 20px;

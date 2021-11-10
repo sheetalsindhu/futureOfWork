@@ -4,8 +4,9 @@ import UpperNav from "../upper_nav/UpperNav";
 import BottomNav from "../bottom-nav/BottomNav";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
+
 const Card = ({ data }) => {
-  const obj = useParams();
+  const obj = useParams(); 
 
   return (
     <>

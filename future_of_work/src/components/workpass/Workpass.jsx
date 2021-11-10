@@ -24,12 +24,22 @@ const Workpass = ({ data }) => {
             <p>{data.about}</p>
           </div>
 
-          <div className={styles.facilities}>
+          {/* <div className={styles.facilities}>
             <h4>Facilities</h4>
             <div className={styles.faci}>
               {data.facilities.map((el) => (
                 <p> {el}</p>
               ))}
+            </div>
+          </div> */}
+
+          <div className={styles.facilities}>
+            <h4>Facilities</h4>
+            <div className={styles.faci}>
+              <img src="./learnAccess.png" alt="" />
+              <img src="./co-work.png" alt="" />
+              <img src="./globalJobs.png" alt="" />
+              <img src="./eventAccess.png" alt="" />
             </div>
           </div>
 
@@ -38,7 +48,7 @@ const Workpass = ({ data }) => {
             <div>
               <ul>
                 {data.events.map((el) => (
-                  <li> {el}</li>
+                  <li> • {el}</li>
                 ))}
               </ul>
             </div>
