@@ -1,8 +1,12 @@
 import styles from "./Team.module.css";
+import UpperNav from "../upper_nav/UpperNav";
+import BottomNav from "../bottom-nav/BottomNav";
 
 function Team() {
   return (
     <>
+      <BottomNav />
+      <UpperNav link="/tribe" />
       <div className={styles.cont}>
         <div className={styles.upper}>
           <div className={styles.phone}>
