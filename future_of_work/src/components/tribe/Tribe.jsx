@@ -16,10 +16,12 @@ function Tribe() {
             <p> Joining solo</p>
           </div>
 
-          <div className={styles.tribe}>
-            <img src="./team.png" alt="team" />
-            <p>With a team</p>
-          </div>
+          <Link To={`Teams`}>
+            <div className={styles.tribe}>
+              <img src="./team.png" alt="team" />
+              <p>With a team</p>
+            </div>
+          </Link>
         </div>
       </div>
     </>
