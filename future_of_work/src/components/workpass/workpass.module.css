@@ -1,7 +1,8 @@
 .card_cont {
   padding: 20px;
   background-color: whitesmoke;
-  padding-top: 80px;
+  padding-top: 90px;
+  padding-bottom: 80px;
 }
 
 .title {
@@ -127,4 +128,7 @@
   border: none;
   color: white;
   font-size: 20px;
+  text-align: center;
+  margin-left: 46px;
+  cursor: pointer;
 }

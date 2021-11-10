@@ -6,6 +6,7 @@ import { BsFillLightningChargeFill } from "react-icons/bs";
 import Data from "../../data.json";
 
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Workpass = () => {
   const { id } = useParams();
@@ -62,8 +63,6 @@ const Workpass = () => {
             </div>
           </div>
 
-          <button className={styles.getbtn}>Get your work pass</button>
-
           <div className={styles.reviews}>
             <h4>Reviews</h4>
             <div>
@@ -74,6 +73,10 @@ const Workpass = () => {
               </ul>
             </div>
           </div>
+
+          <Link to={`Tribe`}>
+            <button className={styles.getbtn}>Get your work pass</button>
+          </Link>
         </div>
       </div>
     </>
