@@ -3,11 +3,19 @@ import UpperNav from "../upper_nav/UpperNav";
 import BottomNav from "../bottom-nav/BottomNav";
 import { BsFillLightningChargeFill } from "react-icons/bs";
 
-const Workpass = ({ data }) => {
-  // useeffect params fetch =1,
+import Data from "../../data.json";
+
+import { useParams } from "react-router-dom";
+
+const Workpass = () => {
+  const { id } = useParams();
+  const data = Data[parseInt(id)];
+
   return (
     <>
       {/* <h1>Select You Daily Pass</h1> */}
+      <UpperNav />
+      <BottomNav />
       <div className={styles.card_cont}>
         <div className={styles.card}>
           <div className={styles.title}>
