@@ -7,11 +7,12 @@ function Tribe() {
   return (
     <>
       <UpperNav />
+      <BottomNav />
       <div className={styles.tribe_div}>
         <h4>New To Our Tribe?</h4>
         <div className={styles.team_div}>
           <div className={styles.tribe}>
-            <img src="./solo.png" alt="solo" />
+            <img src="./team.png" alt="solo" />
             <p> Joining solo</p>
           </div>
 
@@ -21,7 +22,6 @@ function Tribe() {
           </div>
         </div>
       </div>
-      <BottomNav />
     </>
   );
 }
