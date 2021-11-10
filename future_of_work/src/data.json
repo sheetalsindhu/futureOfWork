@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": 0,
     "title": "Daily Pass",
     "features": [
       "Work from any Co-working",
@@ -27,7 +27,7 @@
   },
 
   {
-    "id": 2,
+    "id": 1,
     "title": "Monthly Pass",
     "features": [
       "Universal Co-working",
@@ -54,7 +54,7 @@
   },
 
   {
-    "id": 3,
+    "id": 2,
     "title": "Yearly Pass",
     "features": [
       "Universal Co-working",
