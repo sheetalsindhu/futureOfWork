@@ -1,26 +1,39 @@
 .card {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 20px;
-  padding: 10px;
   background: #ffffff;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 16px 0px 0px 16px;
   border-right: 8px solid #e5265a;
   cursor: pointer;
+  padding: 20px;
 }
 
+.main a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
 .main {
-  padding-top: 80px;
   background-color: whitesmoke;
-  height: 100vh;
+  padding: 20px;
+  padding-top: 100px;
+  height: 800px;
+}
+
+.heading {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .details {
   border-right: 1px dashed gray;
   padding-right: 15px;
+  width: 220px;
 }
 
 .details li {
@@ -42,10 +55,12 @@
   font-size: 24px;
   font-weight: 600;
   color: #e5265a;
+  width: 120px;
+  text-align: center;
 }
 
 .card {
-  padding: 0px 10px;
+  padding: 20px 15px;
 }
 
 .btn {

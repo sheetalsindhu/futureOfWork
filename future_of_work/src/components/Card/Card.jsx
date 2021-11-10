@@ -13,7 +13,7 @@ const Card = () => {
       <UpperNav />
       <BottomNav />
       <div className={styles.main}>
-        <h1>Select Your Pass</h1>
+        <h1 className={styles.heading}>Select Your Pass</h1>
 
         {Data.map((data) => (
           <Link to={`Card/${data.id}`}>
@@ -22,7 +22,7 @@ const Card = () => {
                 <h1 className={styles.title}>{data.title}</h1>
                 <ul>
                   {data.features.map((el) => (
-                    <li> - {el}</li>
+                    <li className={styles.listItems}> {el}</li>
                   ))}
                 </ul>
               </div>
