@@ -1,3 +1,6 @@
+a {
+  text-decoration: none;
+}
 .faci {
   overflow-x: scroll;
   display: flex;
@@ -66,7 +69,7 @@
 
 .main {
   padding: 20px;
-  background-color: whitesmoke;
+  background-color: rgb(250, 250, 250);
   padding-top: 90px;
   padding-bottom: 80px;
 }
@@ -125,6 +128,10 @@
 .work img {
   margin-top: 10px;
   width: 100%;
+}
+
+.work {
+  color: black;
 }
 
 .workH {

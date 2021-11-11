@@ -2,6 +2,7 @@ import styles from "./Homepage.module.css";
 import UpperNav from "../upper_nav/UpperNav";
 import BottomNav from "../bottom-nav/BottomNav";
 import { BsArrowRightCircle } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 function Homepage() {
   return (
@@ -18,18 +19,20 @@ function Homepage() {
           </div>
         </div>
 
-        <div className={styles.work}>
-          <div className={styles.upper}>
-            <div>
-              <p className={styles.workH}>Work</p>
-              <p>From any corner of world</p>
+        <Link to={`cards`}>
+          <div className={styles.work}>
+            <div className={styles.upper}>
+              <div>
+                <p className={styles.workH}>Work</p>
+                <p>From any corner of world</p>
+              </div>
+              <BsArrowRightCircle className={styles.icon} />
             </div>
-            <BsArrowRightCircle className={styles.icon} />
+            <div>
+              <img src="./work.png" alt="" />
+            </div>
           </div>
-          <div>
-            <img src="./work.png" alt="" />
-          </div>
-        </div>
+        </Link>
 
         <div className={styles.facilities}>
           <h4>Explore WorkLyf</h4>
