@@ -8,6 +8,10 @@ import Data from "../../data.json";
 import { Link } from "react-router-dom";
 
 const Card = () => {
+  const cardData = (data) => {
+    window.localStorage.setItem("card", JSON.stringify(data));
+  };
+
   return (
     <>
       <UpperNav />
@@ -17,7 +21,7 @@ const Card = () => {
 
         {Data.map((data) => (
           <Link to={`Card/${data.id}`}>
-            <div className={styles.card}>
+            <div className={styles.card} onClick={() => cardData(data)}>
               <div className={styles.details}>
                 <h1 className={styles.title}>{data.title}</h1>
                 <ul>
