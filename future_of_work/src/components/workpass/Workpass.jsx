@@ -2,11 +2,11 @@ import styles from "./workpass.module.css";
 import UpperNav from "../upper_nav/UpperNav";
 import BottomNav from "../bottom-nav/BottomNav";
 import { BsFillLightningChargeFill } from "react-icons/bs";
-
-import Data from "../../data.json";
-
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+
+import Data from "../../data.json";
+import { Payment } from "../payment/Payment";
 
 const Workpass = () => {
   const { id } = useParams();
@@ -32,15 +32,6 @@ const Workpass = () => {
             <h4>About</h4>
             <p>{data.about}</p>
           </div>
-
-          {/* <div className={styles.facilities}>
-            <h4>Facilities</h4>
-            <div className={styles.faci}>
-              {data.facilities.map((el) => (
-                <p> {el}</p>
-              ))}
-            </div>
-          </div> */}
 
           <div className={styles.facilities}>
             <h4>Facilities</h4>
@@ -74,7 +65,7 @@ const Workpass = () => {
             </div>
           </div>
 
-          <Link to={`Tribe`}>
+          <Link to="/tribe">
             <button className={styles.getbtn}>Get your work pass</button>
           </Link>
         </div>
