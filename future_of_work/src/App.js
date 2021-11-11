@@ -12,14 +12,33 @@ import Team from "./components/team/Team";
 import Homepage from "./components/Homepage/Homepage";
 import Jobs from "./components/Jobs/Jobs";
 import Learn from "./components/learn/Learn";
+
+import { Payment } from "./components/payment/Payment";
+
 function App() {
   return (
     <div className="App">
-      <Learn />
       <Switch>
+        <Route path="/" exact>
+          <Homepage />
+        </Route>
+
+        <Route path="/jobs" exact>
+          <Jobs />
+        </Route>
+
+        <Route path="/learn" exact>
+          <Learn />
+        </Route>
+
+        <Route path="/payment" exact>
+          <Payment />
+        </Route>
+
         <Route path="/worklyf" exact>
           <Worklyf />
         </Route>
+
         <Route path="/card/:id" exact>
           <Workpass />
         </Route>
@@ -32,7 +51,7 @@ function App() {
           <Tribe />
         </Route>
 
-        <Route path="/tribe/team">
+        <Route path="/team">
           <Team />
         </Route>
       </Switch>
