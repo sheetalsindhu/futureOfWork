@@ -10,23 +10,13 @@ import Worklyf from "./components/worklyf/Worklyf";
 import Slider from "./components/Slider/Slider";
 import Team from "./components/team/Team";
 import Homepage from "./components/Homepage/Homepage";
-import Learn from "./components/Learn/Learn";
 import Jobs from "./components/Jobs/Jobs";
-
+import Learn from "./components/learn/Learn";
 function App() {
   return (
     <div className="App">
+      <Learn />
       <Switch>
-        <Route path="/">
-          <Homepage />
-        </Route>
-        <Route path="/Learn">
-          <Learn />
-        </Route>
-        <Route path="/Jobs">
-          <Jobs />
-        </Route>
-
         <Route path="/worklyf" exact>
           <Worklyf />
         </Route>
@@ -42,7 +32,7 @@ function App() {
           <Tribe />
         </Route>
 
-        <Route path="/team">
+        <Route path="/tribe/team">
           <Team />
         </Route>
       </Switch>
@@ -51,5 +41,3 @@ function App() {
 }
 
 export default App;
-
-import "./App.css";

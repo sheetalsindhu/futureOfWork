@@ -15,7 +15,7 @@ const Workpass = () => {
   return (
     <>
       {/* <h1>Select You Daily Pass</h1> */}
-      <UpperNav />
+      <UpperNav link="/cards" />
       <BottomNav />
       <div className={styles.card_cont}>
         <div className={styles.card}>
