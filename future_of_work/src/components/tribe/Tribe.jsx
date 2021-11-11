@@ -11,12 +11,14 @@ function Tribe() {
       <div className={styles.tribe_div}>
         <h4>New To Our Tribe?</h4>
         <div className={styles.team_div}>
-          <div className={styles.tribe}>
-            <img src="./team.png" alt="solo" />
-            <p> Joining solo</p>
-          </div>
+          <Link to="/payment">
+            <div className={styles.tribe}>
+              <img src="./solo.png" alt="solo" />
+              <p> Joining solo</p>
+            </div>
+          </Link>
 
-          <Link To={`Teams`}>
+          <Link to="/team">
             <div className={styles.tribe}>
               <img src="./team.png" alt="team" />
               <p>With a team</p>
